@@ -4,7 +4,8 @@
   "description": "",
   "main": "milestone_1_challenges.js",
   "scripts": {
-    "dev": "nodemon milestone_1_challenges.js"
+    "dev": "nodemon milestone_1_challenges.js",
+    "format": "prettier --write ."
   },
   "keywords": [],
   "author": "",
