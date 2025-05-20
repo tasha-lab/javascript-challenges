@@ -101,6 +101,7 @@ greetUser("Tasha", 15);
 greetUser("Tasha", 20);
 greetUser("Tasha", 23);
 
+//FizzBuzz
 function fizzBuzzCheck(number) {
   if (number % 3 == 0) {
     if (number % 5 == 0) {
@@ -138,3 +139,52 @@ function perimeterAndCircle(l, num) {
 perimeterAndCircle("s", 4);
 perimeterAndCircle("c", 4);
 perimeterAndCircle("p", 4);
+
+
+//Sum of Even Numbers
+//let i= 1
+function sumEvenNumbers(n){
+    let sum =0;
+    for(let i=2; i<=n;i+=2){
+       sum+=i
+    }
+    console.log(sum)
+}
+sumEvenNumbers(20)
+sumEvenNumbers(10)
+
+//Multiply by Itself
+function powerUp(num, times){
+    let answer = 1;
+    for(let i=1; i<=times; i++){
+        answer = answer * num;
+    }
+    console.log(answer)
+}
+powerUp(3,2)
+powerUp(3,5)
+
+//Factorial Calculator
+function factorial(n){
+    let multiply = 1;
+    for(let i=1; i<=n; i++){
+        multiply = multiply * i;
+    }
+    console.log(multiply)
+}
+factorial(5)
+factorial(10)
+
+//Multiple Sum
+function sumMultiples(n, divisor){
+    let sum =0;
+    for(let i=1; i<=n; i++){
+        if (i % divisor === 0) {
+            sum += i;
+          }
+    }
+    console.log(sum)
+}
+sumMultiples(10,2)
+sumMultiples(30,5)
+
