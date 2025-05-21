@@ -5,7 +5,7 @@ let addition = (num1, num2) => {
 const sum = addition(4, 5);
 console.log(sum);
 
-//Convert Minutes into Seconds
+// 2. Convert Minutes into Seconds
 
 let convert = (minute) => {
   return minute * 60;
@@ -14,7 +14,7 @@ let convert = (minute) => {
 let convertedMinutes = convert(4);
 console.log(convertedMinutes);
 
-//Perimeter of a Rectangle
+// 3. Perimeter of a Rectangle
 
 let values = (length, width) => {
   return (length + width) * 2;
@@ -23,7 +23,7 @@ let values = (length, width) => {
 let perimeter = values(10, 20);
 console.log(perimeter);
 
-//Check Negative
+// 4. Check Negative
 
 let isNegative = (value) => {
   if (value <= 0) {
@@ -35,7 +35,7 @@ let isNegative = (value) => {
 isNegative(5);
 isNegative(-5);
 
-//Can I Drive
+// 5. Can I Drive
 
 function canDrive(name, age) {
   if (age <= 18) {
@@ -47,7 +47,7 @@ function canDrive(name, age) {
 canDrive("Antony", 10);
 canDrive("Tasha", 30);
 
-//Largest Number
+// 6. Largest Number
 
 function findLargest(a, b, c) {
   if (a > b && a > c) {
@@ -63,7 +63,7 @@ findLargest(5, 6, 8);
 findLargest(5, 6, -8);
 findLargest(5, -6, -8);
 
-//BMI Calculator
+// 7. BMI Calculator
 function calculateBMI(weight, height) {
   let BMI = weight / (height * height);
 
@@ -82,7 +82,7 @@ calculateBMI(60, 1.6);
 calculateBMI(70, 1.6);
 calculateBMI(80, 1.6);
 
-//Greeting Based On Time
+// 8. Greeting Based On Time
 
 function greetUser(name, hour) {
   if (hour >= 5 && hour <= 11) {
@@ -101,7 +101,7 @@ greetUser("Tasha", 15);
 greetUser("Tasha", 20);
 greetUser("Tasha", 23);
 
-//FizzBuzz
+// 9. FizzBuzz
 function fizzBuzzCheck(number) {
   if (number % 3 == 0) {
     if (number % 5 == 0) {
@@ -125,7 +125,7 @@ fizzBuzzCheck(9);
 fizzBuzzCheck(10);
 fizzBuzzCheck(22);
 
-//Perimeter 2
+// 10 Perimeter 2
 function perimeterAndCircle(l, num) {
   if (l == "s") {
     console.log(num * 4);
@@ -140,51 +140,60 @@ perimeterAndCircle("s", 4);
 perimeterAndCircle("c", 4);
 perimeterAndCircle("p", 4);
 
-
-//Sum of Even Numbers
+// 11. Sum of Even Numbers
 //let i= 1
-function sumEvenNumbers(n){
-    let sum =0;
-    for(let i=2; i<=n;i+=2){
-       sum+=i
-    }
-    console.log(sum)
+function sumEvenNumbers(n) {
+  let sum = 0;
+  for (let i = 2; i <= n; i += 2) {
+    sum += i;
+  }
+  console.log(sum);
 }
-sumEvenNumbers(20)
-sumEvenNumbers(10)
+sumEvenNumbers(20);
+sumEvenNumbers(10);
 
-//Multiply by Itself
-function powerUp(num, times){
-    let answer = 1;
-    for(let i=1; i<=times; i++){
-        answer = answer * num;
-    }
-    console.log(answer)
+// 12. Multiply by Itself
+function powerUp(num, times) {
+  let answer = 1;
+  for (let i = 1; i <= times; i++) {
+    answer = answer * num;
+  }
+  console.log(answer);
 }
-powerUp(3,2)
-powerUp(3,5)
+powerUp(3, 2);
+powerUp(3, 5);
 
-//Factorial Calculator
-function factorial(n){
-    let multiply = 1;
-    for(let i=1; i<=n; i++){
-        multiply = multiply * i;
-    }
-    console.log(multiply)
+// 13. Factorial Calculator
+function factorial(n) {
+  let multiply = 1;
+  for (let i = 1; i <= n; i++) {
+    multiply = multiply * i;
+  }
+  console.log(multiply);
 }
-factorial(5)
-factorial(10)
+factorial(5);
+factorial(10);
 
-//Multiple Sum
-function sumMultiples(n, divisor){
-    let sum =0;
-    for(let i=1; i<=n; i++){
-        if (i % divisor === 0) {
-            sum += i;
-          }
+// 14. Multiple Sum
+function sumMultiples(n, divisor) {
+  let sum = 0;
+  for (let i = 1; i <= n; i++) {
+    if (i % divisor === 0) {
+      sum += i;
     }
-    console.log(sum)
+  }
+  console.log(sum);
 }
-sumMultiples(10,2)
-sumMultiples(30,5)
+sumMultiples(10, 2);
+sumMultiples(30, 5);
 
+// 15. Sum of Digits(math.floor)
+function sumDigits(num) {
+  let sum = 0;
+  for (let i = 0; num > 0; num = Math.floor(num / 10)) {
+    sum = sum + (num % 10);
+  }
+  console.log(sum);
+}
+sumDigits(11);
+sumDigits(125);
