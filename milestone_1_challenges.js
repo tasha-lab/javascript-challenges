@@ -102,28 +102,22 @@ greetUser("Tasha", 20);
 greetUser("Tasha", 23);
 
 // 9. FizzBuzz
-function fizzBuzzCheck(number) {
-  if (number % 3 == 0) {
-    if (number % 5 == 0) {
-      console.log(`FizzBuzz`);
-    } else if (number % 3 == 0) {
-      console.log(`Fizz`);
-    }
-  }
-  // else if(number % 3 == 0){
-  //     console.log(`Fizz`)
-  // }
-  else if (number % 5 == 0) {
-    console.log(`Buzz`);
+function FizzBuzzA(number) {
+  if (number % 3 == 0 && number % 5 == 0) {
+    console.log(`fizzbuzz`);
+  } else if (number % 3 == 0) {
+    console.log(`fizz`);
+  } else if (number % 5 == 0) {
+    console.log(`buzz`);
   } else {
-    console.log(`${number}`);
+    console.log(`invalid`);
   }
 }
 
-fizzBuzzCheck(15);
-fizzBuzzCheck(9);
-fizzBuzzCheck(10);
-fizzBuzzCheck(22);
+FizzBuzzA(15);
+FizzBuzzA(9);
+FizzBuzzA(10);
+FizzBuzzA(22);
 
 // 10 Perimeter 2
 function perimeterAndCircle(l, num) {
