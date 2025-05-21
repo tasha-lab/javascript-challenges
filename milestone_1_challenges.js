@@ -102,7 +102,7 @@ greetUser("Tasha", 20);
 greetUser("Tasha", 23);
 
 // 9. FizzBuzz
-function FizzBuzzA(number) {
+function FizzBuzzCheck(number) {
   if (number % 3 == 0 && number % 5 == 0) {
     console.log(`fizzbuzz`);
   } else if (number % 3 == 0) {
@@ -114,10 +114,10 @@ function FizzBuzzA(number) {
   }
 }
 
-FizzBuzzA(15);
-FizzBuzzA(9);
-FizzBuzzA(10);
-FizzBuzzA(22);
+FizzBuzzCheck(15);
+FizzBuzzCheck(9);
+FizzBuzzCheck(10);
+FizzBuzzCheck(22);
 
 // 10 Perimeter 2
 function perimeterAndCircle(l, num) {
